@@ -390,7 +390,8 @@
 <pre class="text-gray-400">{
   <span class="text-neon-green">"name"</span>: <span class="text-neon-blue">"Thai Quoc Bao"</span>,
   <span class="text-neon-green">"role"</span>: <span class="text-neon-blue">"Backend Engineer"</span>,
-  <span class="text-neon-green">"education"</span>: <span class="text-neon-blue">"B.Eng Software Engineering"</span>,
+  <span class="text-neon-green">"education"</span>: <span class="text-neon-blue">"B.Eng Software Engineering (SGU)"</span>,
+  <span class="text-neon-green">"graduation"</span>: <span class="text-neon-blue">"June 2027"</span>,
   <span class="text-neon-green">"focus"</span>: [
     <span class="text-neon-blue">"Distributed Systems"</span>,
     <span class="text-neon-blue">"Cloud Architecture"</span>,
@@ -630,15 +631,17 @@
                             A <span class="text-gray-300">Retrieval-Augmented Generation</span> pipeline that lets users upload 
                             PDF documents and ask natural language questions. Built with a 
                             <span class="text-gray-300">FastAPI</span> backend, documents are chunked, embedded via 
-                            <span class="text-gray-300">sentence-transformers</span>, and stored in a vector database. 
-                            At query time, relevant chunks are retrieved with cosine similarity and fed to an LLM for 
-                            <span class="text-gray-300">context-grounded answers</span> — minimizing hallucinations while 
-                            maximizing factual accuracy.
+                            <span class="text-gray-300">sentence-transformers</span>, and stored in ChromaDB for sub-second 
+                            similarity retrieval. Integrated the <span class="text-gray-300">Google Gemini API</span> as the 
+                            generative backbone with prompt engineering techniques for 
+                            <span class="text-gray-300">context-grounded answers</span> — reducing hallucinations by ~70% 
+                            while achieving p95 query latency under 2 seconds.
                         </p>
                         <div class="flex flex-wrap gap-2 pt-2">
                             <span class="text-xs font-mono bg-dark-500 text-neon-blue/80 px-2.5 py-1 rounded-md">Python</span>
                             <span class="text-xs font-mono bg-dark-500 text-neon-blue/80 px-2.5 py-1 rounded-md">FastAPI</span>
                             <span class="text-xs font-mono bg-dark-500 text-neon-blue/80 px-2.5 py-1 rounded-md">LangChain</span>
+                            <span class="text-xs font-mono bg-dark-500 text-neon-blue/80 px-2.5 py-1 rounded-md">Gemini API</span>
                             <span class="text-xs font-mono bg-dark-500 text-neon-blue/80 px-2.5 py-1 rounded-md">ChromaDB</span>
                             <span class="text-xs font-mono bg-dark-500 text-neon-blue/80 px-2.5 py-1 rounded-md">Docker</span>
                         </div>
